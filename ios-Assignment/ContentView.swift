@@ -7,6 +7,18 @@
 
 import SwiftUI
 
+struct Track: Codable{
+    var trackID: Int
+    var trackName: String
+    var collectionName: String
+}
+
+struct Album: Codable {
+    var collectionType: String
+    var artworkUrl100: String
+    var collectionName: String
+}
+
 struct ContentView: View {
     var body: some View {
         VStack {
